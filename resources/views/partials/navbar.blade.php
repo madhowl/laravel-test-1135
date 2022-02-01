@@ -23,11 +23,10 @@
         </ul>
         <div class="flex">
             @auth("web")
-
             <div class="flex items-center justify-between mr-4 ">
-                <div class="flex items-center space-x-4"><a href=""
-                                                            class="flex-shrink-0 w-10 h-10 overflow-hidden rounded-full "><img
-                    src="/default_user.png" alt="tharshan_09" class="object-cover w-full h-full"></a>
+                <div class="flex items-center space-x-4">
+                    <a href="" class="flex-shrink-0 w-10 h-10 overflow-hidden rounded-full ">
+                        <img src="/default_user.png" alt="tharshan_09" class="object-cover w-full h-full"></a>
                     <div class="flex flex-col space-y-1">
                         {{ Auth::user()->name }}
                     </div>

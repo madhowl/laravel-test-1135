@@ -15,4 +15,13 @@ class Post extends Model
         'img',
         'content',
     ];
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class)->whereNull('parent_id');
+    }
+    public function categories()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
